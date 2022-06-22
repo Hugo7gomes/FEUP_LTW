@@ -1,8 +1,8 @@
 ## LTW Project
 Developed by: </br>
-[Hugo Gomes](https://github.com/Hugo7gomes) </br>
-[Lia Silva](https://github.com/liavieir) </br>
-[João Moreira](https://github.com/up202005035) </br>
+* [Hugo Gomes](https://github.com/Hugo7gomes) </br>
+* [Lia Silva](https://github.com/liavieir) </br>
+* [João Moreira](https://github.com/up202005035) </br>
 
 
 ## Features
