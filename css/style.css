@@ -1,0 +1,1155 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+html,body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
+    font-family: UberMove, sans-serif;
+    text-decoration: none;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    font-weight: bold;
+}
+
+h3 {
+    margin: 2%;
+    font-weight: bold;
+}
+
+body > header {
+    width: 100%;
+    height: 90px;
+    background-color: #0CAFFF;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid #0076CE;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+}
+
+body > header > a {
+    color: white;
+    font-weight: bold;
+}
+
+body > header > a:hover {
+    color: #064579;
+}
+
+/* Título */
+body > header > a > h1 {
+    color: #0057D9;
+    font-weight: bold;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 200%;
+    display: block;
+    transform: translate(-25%,0);
+    
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    transform: translate(80%, 0);
+}
+
+.login input {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: 3px;
+}
+
+.login > input::placeholder {
+    position: absolute;
+    top:0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #eee;
+}
+
+.arrowLogin {
+    color: white;
+    font-size: 150%;
+    background-color: transparent; 
+    border: none;
+    cursor: pointer;
+}
+
+ .login > input {
+    outline: none;
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(238, 238, 238, 0.7);
+    color: white;
+    opacity: 0.9;
+    box-sizing: border-box;
+    font-weight: 400;
+    transition: 0.2s linear;
+    margin-bottom: 2%;
+}
+
+/* Search bar */
+.search-box{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    align-self: center;
+}
+
+.input-search::placeholder{
+    color:rgba(255,255,255,.5);
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+    color:#0076CE ;
+    background-color:transparent;
+    pointer-events: painted;  
+}
+
+.input-search{
+    width: 300px;
+    height: 50px;
+    border-style: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid rgba(255,255,255,.5);
+    color:white;
+    outline: none;
+    padding-right: 40px;
+}
+
+.fas.fa-search {
+    color: white;
+}
+
+.searchSideNav {
+    height: 0;
+    width: 100%;
+    position: sticky;
+    z-index: 2;
+    top: 90px;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    float: top;
+}
+
+
+#searchRestaurantName {
+    color: black;
+}
+
+#searchType {
+    width: 100%;
+    display: block;
+    flex-direction: row;
+    outline: none;
+    border: none;
+    box-orient: horizontal;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#searchType > option {
+    display: flex;
+    flex-direction: row;
+    padding: 17px;
+
+}
+
+#searchType > option:hover {
+    background-color: #eee;
+    outline: none;
+    cursor: pointer;
+}
+/* ----------------------------------------------------------------------------------------- */
+
+
+/* Buttons */
+#nameReg, #emailReg, #passReg, #nameUpdate, #passUpdate, #phoneNumberUpdate, #addressUpdate, #regButton, #updateProfileButton, #editRestaurantSubmitButton, #addRestaurantSubmitButton, #buttonRestaurantsOwner, #buttonAddRestaurant, #buttonShowUserOrders, #buttonBecomeOwner, #nameRestaurant, 
+#phoneNumberRestaurant, #emailRestaurant, #addressRestaurant , #categoryRestaurant, #nameRestaurantUpdate, #phoneNumberRestaurantUpdate, #addressRestaurantUpdate, #categoryRestaurantUpdate, #buttonEditRestaurant, #buttonAddDish,#buttonshowRestaurantOrders, #nameDish, #priceDish, #addDishSubmitButton, 
+.dishRemoveFavorite, .removeDish, #buttonReviewRestaurant, #addReviewButton, #textReview, #scoreReview, #buttonChangeOrderState {
+    display: inline-block;
+    border: none;
+    align-self: center;
+    cursor: pointer;
+}
+
+.regButton:hover, .purchaseButton:hover, #buttonRestaurantsOwner:hover, #buttonAddRestaurant:hover, #buttonShowUserOrders:hover, #regButton:hover, #updateProfileButton:hover, #editRestaurantSubmitButton:hover, #addRestaurantSubmitButton:hover, #buttonEditRestaurant:hover, #buttonAddDish:hover, #addDishSubmitButton:hover, #buttonshowRestaurantOrders:hover, #addReviewButton:hover, #faShoppingCart:hover, #profileButton:hover,
+#buttonBecomeOwner:hover, .removeButton:hover, #buttonAddAnswer:hover, #buttonReviewRestaurant:hover, .buttonChangeOrderState:hover {
+    opacity: 1;
+}
+
+.fa.fa-circle-xmark.removeDish {
+    font-size: 120%;
+    position: relative;
+    left: 190px;
+    bottom:248px;
+    background-color: transparent;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.purchaseButton {
+    width: 40%;
+    padding: 16px;
+    border: none;
+    background-color: #0CAFFF;
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
+    position: relative;
+    left: 250px;
+    top: 150px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.18) 1px 1px;
+}
+
+.purchaseButton, #buttonRestaurantsOwner, #buttonAddRestaurant, #regButton, #updateProfileButton, #editRestaurantSubmitButton, #addRestaurantSubmitButton, #buttonEditRestaurant, #buttonAddDish, #addDishSubmitButton, #buttonshowRestaurantOrders, #addReviewButton, .buttonChangeOrderState {
+    cursor: pointer;
+    opacity: 0.9;
+    border-radius: 3px;
+}
+
+#regButton, #updateProfileButton, #addRestaurantSubmitButton, #editRestaurantSubmitButton, #addDishSubmitButton {
+    background-color: #0CAFFF;
+    color: white;
+    cursor: pointer;
+    opacity: 0.9;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#nameReg, #emailReg, #passReg, #nameUpdate, #passUpdate, #phoneNumberUpdate, #addressUpdate, #regButton, #updateProfileButton, #editRestaurantSubmitButton, #addRestaurantSubmitButton, #nameRestaurant,
+#phoneNumberRestaurant, #emailRestaurant, #addressRestaurant , #categoryRestaurant, #nameRestaurantUpdate, #phoneNumberRestaurantUpdate, #addressRestaurantUpdate, #categoryRestaurantUpdate, #nameDish, #priceDish, #addDishSubmitButton, #textReview, #scoreReview {
+    width: 40%;
+    padding: 16px;
+    margin: 5px 0 22px 0;
+    border-radius: 3px;
+}
+
+#nameReg, #emailReg, #passReg, #nameUpdate, #passUpdate, #phoneNumberUpdate, #addressUpdate, #nameRestaurant, #phoneNumberRestaurant, #emailRestaurant, #addressRestaurant , #categoryRestaurant, #nameRestaurantUpdate, #phoneNumberRestaurantUpdate, #addressRestaurantUpdate, #categoryRestaurantUpdate, #nameDish, #priceDish, #textReview, #scoreReview {
+    background: #f1f1f1;
+}
+
+#nameReg:focus, #emailReg:focus, #passReg:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.LogOutButton {
+    transform: translate(155%,0);
+}
+
+
+#restaurants, #dishesFavorite {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 30px;
+    column-gap: 100px;
+    padding-left: 2%;
+}
+
+.restaurant, .dishFavorite {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+}
+
+.restaurantMainPage, .restaurantContent {
+    margin-left: 2%;
+    font-weight: 100;
+    justify-content: space-around;
+}
+
+.restaurantMainPage h1, .restaurantContent h1 {
+    padding: 20px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+}
+
+.restaurantContent{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.ratingStar {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.restaurantContent .restaurantRating{
+    margin-left: auto;
+}
+
+.pageRestaurantContent {
+    line-height: 0.6;
+    font-family: "Raleway", sans-serif;
+    background-color: #eee;
+    padding: 10px;
+    width: 98%;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    margin-bottom: 30px;
+}
+
+.pageRestaurantContent > h2 {
+    margin-top: 70px;
+}
+
+
+#register, #editProfile, #createRestaurant, #editRestaurant, #createDish, #createReview {
+    padding: 16px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#editProfile > h1, #createRestaurant > h1, #editRestaurant > h1, #createDish > h1, #createReview > h1, #createRestaurant > h1 {
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+
+/* Estrela favoritos */
+.fa.fa-star-o {
+    color: #FFD017;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.fa.fa-close.removeDish, .removeFavorite, .dishRemoveFavorite {
+    border: none;
+    color: #333;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 120%;
+}
+
+.removeFavorite {
+    position: relative;
+    left: 192px;
+    bottom: 230px;
+}
+
+.dishRemoveFavorite {
+    position: relative; 
+    left: 98px;
+    bottom: 246px;
+}
+
+#cartSideNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+#cartSideNav a, .closeSearchNavButton {
+    color: #818181;
+}
+
+#cartSideNav a:hover, .closeSearchNavButton:hover {
+    color: black;
+}
+
+.closeSearchNavButton {
+    font-size: 190%;
+    position: relative;
+    left: 1430px;
+}
+
+#cartSideNav .closeButton {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+#profileButton { 
+    position: absolute;
+    left: 1185px;
+    top: 20px;
+}
+
+#faShoppingCart { 
+    position: relative;
+    left: 308px;
+}
+
+#faShoppingCart, #profileButton {
+    background-color: transparent;
+    color: white;
+    opacity: 0.9;
+    border: none;
+    padding: 10px 10px;
+    font-size: 185%;
+}
+
+#buttonsOwner, #buttonsNotOwner {
+    margin-right: 3%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 30px;
+    justify-content: end;
+}
+
+.buttonsRestaurantOwner {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 2%;
+    position: relative;
+    top: 65px;
+    column-gap: 30px;
+}
+
+
+#buttonBecomeOwner, #buttonRestaurantsOwner, #buttonAddRestaurant, #buttonShowUserOrders, #buttonEditRestaurant, #buttonAddDish, #buttonshowRestaurantOrders, #buttonshowRestaurantOrders, #addReviewButton {
+    padding: 10px;
+    background-color: #0CAFFF;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    opacity: 0.9;
+}
+
+#buttonAddDish {
+    position: absolute;
+    left: 92%;
+    bottom: -40px;
+}
+
+
+#faShoppingCart:hover, #profileButton:hover{
+    color: #064579;
+}
+
+
+.sectionHeader {
+    padding-left: 15px;
+    padding-bottom: 1.5em;
+    font-size: 250%;
+    font-weight: normal;
+}
+
+
+.cartRowHeader {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15px;
+    margin-right: 1.5em;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.cartHeader {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+    border-bottom: 1px solid black;
+}
+
+.cartColumn {
+    display: flex;
+    align-self: center;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cartRow {
+    display: flex;
+    align-items: baseline;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #eee;
+    margin-bottom: 3%;
+}
+
+.cartItem {
+    width: 45%;
+}
+
+.cartItems {
+    margin-left: 18px;
+    align-items: flex-end;
+}
+
+
+
+.cartItemPrice {
+    font-size: 1.2em;
+    color: #333;
+    width: 12%;
+    transform: translate(30%,0);
+}
+
+.cartItemQuantity {
+    transform: translate(10%,0);
+}
+
+.cartItemName {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cartItemImg {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.cartQuantityInput {
+    height: 34px;
+    width: 40px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.removeButton {
+    padding: 8px;
+    display: inline-block;
+    border: none;
+    align-self: center;
+    background-color: #DCDCDC;
+    color: black;
+    font-weight: bold;
+    font-size: 80%;
+    border-radius: 3px;
+    transform: translate(-20%,0);
+}
+
+.cartRow:last-child {
+    margin-bottom: 5px;
+}
+
+.cartTotal {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    align-items: baseline;
+    left: 68%;
+    margin-top: 5%;
+}
+
+.cartTotalTitle {
+    text-align: right;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+.cartTotalPrice {
+    margin-left: 4%;
+    font-size: 150%;
+    opacity: 0.7;
+}
+
+.categoriesMenu {
+    font-family: "Raleway", sans-serif;
+    width: 18%;
+    display: block;
+    position: sticky;
+    z-index: 1;
+    background: #eee;
+    overflow: hidden;
+    padding: 8px 0;
+    padding-bottom: 100%;
+    float: left;
+    margin-right: 1.5%;
+    box-shadow: rgba(0, 0, 0, 0.08) 3px 0px 0px 0px;
+}
+
+
+.categoriesMenu a {
+    padding: 23px 10px 23px 20px;
+    font-size: 17px;
+    color: #064579;
+    opacity: 0.9;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    border-bottom-width: 10%;
+    text-align: center;
+}
+
+.categoriesMenu a:hover {
+    color: #064579;
+    background-color: white;
+}
+
+#dishes {
+    padding: 1em;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 30px;
+    column-gap: 40px;
+    margin-left: 1%;
+}
+
+
+.dishImg {
+    transition: transform .5s ease;
+    margin: 0;
+}
+
+.dishImg:hover {
+    transform: scale(1.05);
+}
+
+.dish {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.dish:hover {
+    border: 2px solid white;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.dishContent {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 40px;
+}
+
+.dishName {
+    max-width: fit-content;
+    line-height: 90%;
+    font-weight: bold;
+}
+
+.buttonAddItemCart {
+    border: none;
+    position: relative;
+    left: 190px;
+    bottom: 249px;
+    cursor: pointer;
+    font-size: 120%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.dishFavorite {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+#reviews {
+    padding: 10px;
+    width: 98%;
+    margin-bottom: 30px;
+}
+
+.reviewUserName {
+    font-weight: bold;
+}
+
+.reviewContent {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+.reviewAnswer {
+    background-color: #eee;
+    margin-left: 3%;
+    margin-top: 1.5%;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.addAnswerForm {
+    outline: none;
+    border: none;
+    background-color: #eee;
+    margin-left: 3%;
+    margin-top: 1%;
+    padding: 8px;
+    padding-right: 960px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+
+}   
+
+#buttonAddAnswer {
+    background-color: #0CAFFF;
+    padding: 7px;
+    opacity: 0.9;
+    border: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+
+.restaurantReview, .emptySection {
+    background-color: white;
+    padding: 0.8em;
+    margin: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.emptySection {
+    width: 15%;
+}
+
+#orders {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 20px;
+    margin: 5%;
+    justify-content: flex-start;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    background-color: #eee;
+    padding: 20px;
+    width: 20%;
+    min-height: 300px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 4px;
+}
+
+.orderNameRestaurant {
+    font-weight: bold;
+    margin: 10px 0 9px 0; 
+    font-size: 130%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.orderState {
+    font-weight: normal;
+    font-size: smaller  ;
+}
+
+
+.dishes {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 2px 10px 2px 10px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 2px 2px 4px;
+    min-height: 160px;
+}
+
+.dishOrder {
+    border-bottom: dotted 1px black;
+}
+
+#buttonReviewRestaurant {
+    color: #0076CE;
+    position: relative;
+    top: 18px;
+    opacity: 0.9;
+    font-weight: bold;
+}
+
+.order > form {
+    align-items: baseline;
+}
+
+.buttonChangeOrderState {
+    background-color: #0CAFFF;
+    padding: 5.1px;
+    opacity: 0.9;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.changeOrderState {
+    z-index: 3;
+    border: solid 1px white;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.18) 1px 1px;
+    outline: none;
+    padding: 4px;
+}
+
+
+.success {
+    display: inline-block;
+    width: 100%;
+    text-align: center; 
+    color: #4F8A10;
+    background-color: #DFF2BF;
+    padding: 20px 20px;
+}
+
+.error {
+    display: inline-block;
+    width: 100%;
+    text-align: center; 
+    color: #D8000C;
+    background-color: #FFD2D2;
+    padding: 20px 20px;
+}
+
+.imgPrincipal {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+}
+
+
+footer {
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #2196F3;
+    padding: 1em;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    padding-bottom: 2px;
+}
+
+[class*="col-"] {
+    width: 100%;
+  }
+
+
+@media only screen and (max-width: 376px) {
+
+    html,body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    body > header > a > h1 {
+        max-width: fit-content;
+        text-align: center;
+        font-weight: bold;
+        word-wrap: break-word;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        font-size: 110%;
+        float: left;
+        position: relative;
+        padding-left: 15px;
+        
+    }
+
+    header {
+        justify-content: space-around;
+    }
+
+    .categoriesMenu a {
+        font-size: 80%;
+        text-align: center;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .search-box {
+        width: 30%;
+    }
+
+    .btn-search {
+        font-size: 100%;
+        width: 50%;
+    }
+
+    .input-search {
+        width: 80%;
+    }
+
+    .closeSearchNavButton {
+        position: relative;
+        left: 90%;
+        font-size: 120%;
+    }
+
+    #profileButton {
+        position: relative;
+        left: 260%;
+        font-size: 130%;
+    }
+
+    #faShoppingCart {
+        position: relative;
+        left: 20%;
+        top: -10%;
+        font-size: 130%;
+    }
+
+    .LogOutButton {
+        position: relative;
+        right: 23%;
+        top: 50%;
+        font-size: 90%;
+    }
+
+    #restaurants, #orders {
+        justify-content: center;
+    }
+
+    .restaurant {
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .restaurantImg, .dishImg, .dishImgOwner {
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+    }
+
+    .buttonsRestaurantOwner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        align-items: flex-end;
+        position: relative;
+        top: 20px;
+    }
+
+    #buttonAddDish {
+        position: relative;
+        left: 10px;
+    }
+
+
+    #cartSideNav {
+        max-width: 100%;
+    }
+    
+    .closeSearchNavButton {
+        font-size: 90%;
+        position: relative;
+        left: 1430px;
+    }
+
+    .sectionHeader {
+        font-size: 150%;
+    }
+
+    .cartRowHeader {
+        font-size: 70%;
+    }
+
+    .cartRow {
+        max-width: fit-content;
+        margin-right: 1%;
+    }
+
+    .cartItemName, .cartItemPrice {
+        font-size: 100%;
+    }
+
+    .removeButton {
+        font-size: 70%;
+        position: relative;
+        left: -10px;
+    }
+
+    .cartItemQuantity {
+        size: 10%;
+    }
+
+    .cartItemQuantity > .cartColumn {
+        position: relative;
+        left: 15px;
+    }
+
+
+    .cartTotal {
+        font-size: 70%;
+        position: relative;
+        left: 220px;
+    }
+
+    .purchaseButton {
+        position: relative;
+        left: 210px;
+    }
+
+    .imgPrincipal {
+        height: 10%;
+    }
+
+    #buttonsOwner {
+        margin: 3%;
+    }
+
+    #buttonRestaurantsOwner, #buttonAddRestaurant, #buttonShowUserOrders {
+        padding: 1px;
+    }
+
+    #editProfile, #createRestaurant, #register, #editRestaurant, #createDish {
+        width: 100%;
+        padding: 5px;
+    }
+
+    #editProfile > h1, #createRestaurant > h1, #register > h1, #editRestaurant > h1, #createDish > h1 {
+        padding: 15px;
+        font-size: 130%;
+    }
+
+    #updateProfileButton, #addRestaurantSubmitButton, #regButton, #editRestaurantSubmitButton, #addDishSubmitButton {
+        font-size: 100%;
+    }
+
+    h2 {
+        padding: 10px;
+    }
+
+    .titleRestaurantLogin {
+        padding: 10px;
+        margin-left: 18%;
+    }
+
+    .registerMainMenu {
+        font-size: 80%;
+        position: relative;
+        left: 12px;
+    }
+
+    .arrowLogin {
+        font-size: 100%;
+    }
+
+    .login {
+        width: 38%;
+        position: relative;
+        right: 25%;
+    }
+
+    .login > input::placeholder {
+        font-size: 92%;
+        justify-self: flex-start;
+    }
+
+    .login > input {
+        width: 200%;
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .input-search::placeholder {
+        font-size: 90%;
+    }
+
+    .reviewContent {
+        padding: 10px;
+    }
+
+    .reviewAnswer {
+        line-height: 100%;
+    }
+
+    .order {
+        width: 70%;
+    }
+
+    footer {
+        font-size: 80%;
+    }
+
+}
+
+
+
+
+  
+
+
+
+
+  
