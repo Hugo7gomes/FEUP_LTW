@@ -1,3 +1,10 @@
+## LTW Project
+Developed by: 
+[Hugo Gomes](https://github.com/Hugo7gomes)
+[Lia Silva](https://github.com/liavieir)
+[João Moreira](https://github.com/up202005035)
+
+
 ## Features
 
 - [x] Register
